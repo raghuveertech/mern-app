@@ -1,0 +1,22 @@
+{
+  "name": "mern-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "dev": "node --watch server",
+    "frontend": "npm start --prefix frontend",
+    "serve": "concurrently  \" npm run dev\" \" npm run frontend\" "
+  },
+  "author": "Raghuveer",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mongoose": "^8.0.2"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
